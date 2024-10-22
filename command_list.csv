@@ -1,0 +1,16 @@
+   56  git commit -m "Add text_ignore.txt to .gitignore"\n
+   57  touch main_test.txt\n
+   58  git add .\n
+   59  git commit -m "Create main_test.txt"\n
+   60  git checkout -b develop\n
+   61  touch develop_test.txt\n
+   62  git add .\n
+   63  git commit -m "Create develop_test.txt"\n
+   64  git add develop_test.txt\n
+   65  git commit -m "Create develop_test.txt"\n
+   66  nano develop_test.txt\n
+   67  git add develop_test.txt\n
+   68  git commit -m "Add a small change to develop_test.txt"\n
+   69  git checkout main\n
+   70  git merge develop\n
+   71  git log\n
